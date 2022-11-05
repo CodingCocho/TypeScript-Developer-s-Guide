@@ -1,0 +1,1 @@
+{"version":3,"sources":["style/style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"style.493e6e98.css","sourceRoot":"..","sourcesContent":["*\r\n{\r\n  box-sizing: border-box;\r\n  margin: 0px;\r\n  padding: 0px;\r\n}\r\n\r\n#map\r\n{\r\n  height: 100vh;\r\n}"]}
