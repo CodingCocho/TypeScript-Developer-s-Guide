@@ -1,29 +1,15 @@
 "use strict";
-class Sorter {
-    constructor(input) {
-        // Bubble Sort 
-        // Space Complexity O(1)
-        // Time Complexity O(n^2)
-        this.sort = () => {
-            const { length } = this.collection;
-            // O(n) 
-            // n = length of array
-            for (let i = 0; i < length; i++) {
-                // O(n)
-                // n = length of array - i per iteration of i
-                // therefore it results in O(n) for all cases
-                for (let j = 0; j < length - i - j; j++) {
-                    if (this.collection[j] > this.collection[j + 1]) {
-                        const leftHand = this.collection[j];
-                        this.collection[j] = this.collection[j + 1];
-                        this.collection[j + 1] = leftHand;
-                    }
-                }
-            }
-        };
-        this.collection = input;
-    }
-}
-const sorter = new Sorter([10, 3, -5, 0]);
-sorter.sort();
-console.log(sorter.collection);
+Object.defineProperty(exports, "__esModule", { value: true });
+const CharactersCollection_1 = require("./CharactersCollection");
+const LinkedList_1 = require("./LinkedList");
+const NumbersCollection_1 = require("./NumbersCollection");
+const numbersCollection = new NumbersCollection_1.NumbersCollection([10, 3, -5, 0, -8, 9]);
+numbersCollection.sort();
+console.log(numbersCollection.data);
+const charCollection = new CharactersCollection_1.CharactersCollection('basdwertewunjasdf');
+charCollection.sort();
+console.log(charCollection.data);
+const linkedList = new LinkedList_1.LinkedListEngine([1, 8, 2, -4, 10, -7]);
+// linkedList.printList();
+linkedList.sort();
+linkedList.printList();
